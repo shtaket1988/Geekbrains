@@ -1,0 +1,46 @@
+.galery {
+    margin: 100px auto 0;
+    height: 256px;
+    width: 341px;
+    position: relative;
+}
+.viewport{
+    width: 341px;
+    overflow: hidden;
+    position: relative;
+    height: 256px;
+}
+.slidewrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 256px;
+    margin: 0;
+    padding: 0;
+    width: 99999px;
+}
+.slide{
+    width: 341px;
+    height: 256px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #ff0000;
+}
+.slide img {
+    width: 341px;
+    height: 256px;
+}
+.left-button {
+    position: absolute;
+    top: 100px;
+    left: -70px;
+    cursor: pointer;
+}
+.right-button {
+    position: absolute;
+    top: 100px;
+    right: -70px;
+    cursor: pointer;
+}

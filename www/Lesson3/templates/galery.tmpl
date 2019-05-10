@@ -1,0 +1,16 @@
+{% include 'header.tmpl' %}
+
+<div class="galery">
+    <div class="left-button" id="slide-left">ВЛЕВО</div>
+    <div class="right-button" id="slide-right">ВПРАВО</div>
+    <div class='viewport'>
+        <ul class='slidewrapper' data-current=0>
+            {% for img in images %}
+               <li class='slide'><a href="foto.php?img={{ img.img }}"><img src="img/{{ img.img }}" title="{{ img.name }}" /></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+{% include 'footer.tmpl' %}
